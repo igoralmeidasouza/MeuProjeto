@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Casdastro</h1>
+
+    <form name="cadastro" method="get" action="get.php"> 
+
+        Nome: <br>
+        <input type="name" name="nome"> <br><br>
+
+        Sobrenome: <br>
+        <input type="text" name="sobrenome"> <br><br>
+
+        Senha:  <br>
+        <input type="password" name="senha"> <br><br>
+
+        E-mail: <br>
+        <input type="email" name="email"> <br><br>
+
+        Telefone: <br>
+        <input type="tel" name="telefone"> <br><br>
+
+        Formação: <br>
+        <select name="formacao"> 
+            <option hidden> </option>
+
+            <option value="Ensino fundamental - Incompleto">
+            Ensino fundamental - Incompleto</object>
+
+            <option value="Ensino fundamental - Completo">
+            Ensino fundamental - Completo</object>
+
+            <option value="Ensino Médio - Incompleto"> 
+            Ensino médio - Incompleto </object>
+
+            <option value="Ensino fundamental - Completo">
+            Ensino médio - Completo</object>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        
+    </form>
+</body>
+</html>
