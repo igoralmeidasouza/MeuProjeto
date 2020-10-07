@@ -11,7 +11,7 @@
 
     if (!isset($_COOKIE['voto'])) {
         
-        setcookie("voto", $voto,time()+1);
+        setcookie("voto", $voto,time()+3600*24*31);
  
         $msg = "Obrigado por votar";
 
@@ -19,8 +19,10 @@
     else{
 
         $msg = "Você já votou uma vez.";
-
+        
     }
+    echo "Você votou no: ",$voto;
+    echo "<br><br>";
     echo $msg;
 
     ?>
